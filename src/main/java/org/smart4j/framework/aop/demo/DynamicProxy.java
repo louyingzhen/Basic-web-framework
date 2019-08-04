@@ -1,4 +1,4 @@
-package org.smart4j.framework.aop;
+package org.smart4j.framework.aop.demo;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

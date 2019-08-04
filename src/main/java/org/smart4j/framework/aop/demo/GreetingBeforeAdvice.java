@@ -1,4 +1,4 @@
-package org.smart4j.framework.aop;
+package org.smart4j.framework.aop.demo;
 
 import org.springframework.aop.MethodBeforeAdvice;
 

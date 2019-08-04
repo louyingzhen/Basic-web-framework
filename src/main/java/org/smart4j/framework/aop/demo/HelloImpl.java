@@ -1,6 +1,5 @@
-package org.smart4j.framework.aop;
+package org.smart4j.framework.aop.demo;
 
-import org.smart4j.framework.aop.demo.Tag;
 import org.springframework.stereotype.Component;
 
 @Component

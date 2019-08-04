@@ -1,4 +1,4 @@
-package org.smart4j.framework.aop;
+package org.smart4j.framework.aop.demo;
 
 public class ApologyImpl implements Apology {
     @Override
