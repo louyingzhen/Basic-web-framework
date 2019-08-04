@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class GreetingAspect {
 
-    @Around("execution(* aop.demo.HelloImpl.*(..))")
+    @Around("@annotation(aop.demo.Tag)")
     public Object around(ProceedingJoinPoint pjp) throws Throwable{
         before();
         Object result = pjp.proceed();
