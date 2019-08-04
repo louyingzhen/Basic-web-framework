@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8aeeef8-3c23-4f78-9c27-29fa8a05056d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/annotation/Aspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/proxy/AspectProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/proxy/Proxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/proxy/ProxyChain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/proxy/ProxyManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/Apology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/demo/Apology.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/ApologyImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/demo/ApologyImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/CGLibProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/demo/CGLibProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/demo/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/Client2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/demo/Client2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/DynamicProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/demo/DynamicProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/GreetingAfterAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/demo/GreetingAfterAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/GreetingBeforeAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/demo/GreetingBeforeAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/GreetingIntroAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/demo/GreetingIntroAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/GreetingThrowAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/demo/GreetingThrowAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/demo/Hello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/HelloImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/demo/HelloImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/HelloProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/demo/HelloProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/demo/HelloAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/demo/HelloAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/practice.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/proxy/ControllerAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/proxy/AspectProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smart4j/framework/proxy/AspectProxy.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,18 +18,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/demo/DynamicProxy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/smart4j/framework/aop/demo/GreetingAfterAdvice.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -148,11 +117,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/smart4j/framework/proxy/AspectProxy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
-              <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/smart4j/framework/proxy/ControllerAspect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -189,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/smart4j/framework/util/CastUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/smart4j/framework/util/ClassUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/smart4j/framework/annotation/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/smart4j/framework/annotation/Action.java" />
@@ -240,6 +220,7 @@
         <option value="$PROJECT_DIR$/src/main/java/org/smart4j/framework/proxy/ProxyChain.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/smart4j/framework/proxy/ProxyManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/smart4j/framework/proxy/AspectProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/smart4j/framework/proxy/ControllerAspect.java" />
       </list>
     </option>
   </component>
@@ -475,7 +456,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58720000" />
+    <option name="totallyTimeSpent" value="59301000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -549,16 +530,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/smart4j/framework/annotation/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/smart4j/framework/annotation/Service.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -1045,7 +1016,17 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/org/smart4j/framework/proxy/AspectProxy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
-          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/smart4j/framework/proxy/ControllerAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

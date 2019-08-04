@@ -1,11 +1,6 @@
-# Maven #
 target/
-
-# IDEA #
 .idea/
 *.iml
-
-# Eclipse #
 .setting/
 .metadata/
 .classpath

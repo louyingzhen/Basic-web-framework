@@ -53,6 +53,6 @@ public abstract class AspectProxy implements Proxy {
     }
 
     public void end(){
-        
+
     }
 }
