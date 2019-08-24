@@ -36,16 +36,21 @@ public final class CastUtil {
         return doubleValue;
     }
 
+
+    public static double castDouble(Object obj){
+        return CastUtil.castDouble(obj,0L);
+    }
+
     /**
      * 转为long型
      */
     public static long castLong(Object obj){
-        return CastUtil.castLong(obj,0);
+        return CastUtil.castLong(obj,0L);
     }
     /**
      * 转为long型（提供默认值）
      */
-    public static long castLong(Object obj,long defaultValue){
+    public static long castLong(Object obj,ong defaultValue){
         long longValue = defaultValue;
         if(obj != null){
             String strValue = castString(obj);
@@ -87,14 +92,14 @@ public final class CastUtil {
     /**
      * 转为boolean型
      */
-    public static boolean castBoolean(Object obj){
+    public static Boolean castBoolean(Object obj){
         return CastUtil.castBoolean(obj,false);
     }
 
     /**
      * 转为boolean型（提供默认值）
      */
-    public static boolean castBoolean(Object obj,boolean defaultValue){
+    public static Boolean castBoolean(Object obj,Boolean defaultValue){
         boolean booleanValue=defaultValue;
         if(obj != null){
             booleanValue = Boolean.parseBoolean(castString(obj));

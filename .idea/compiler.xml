@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="smartframework" target="6" />
+      <module name="smart-framework" target="6" />
     </bytecodeTargetLevel>
   </component>
 </project>

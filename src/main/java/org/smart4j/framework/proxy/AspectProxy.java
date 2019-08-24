@@ -1,9 +1,7 @@
 package org.smart4j.framework.proxy;
 
-import org.aspectj.weaver.patterns.ThisOrTargetAnnotationPointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.smart4j.framework.annotation.Aspect;
 
 import java.lang.reflect.Method;
 
@@ -25,9 +23,9 @@ public abstract class AspectProxy implements Proxy {
             } else {
                 result = proxyChain.doProxyChain();
             }
-        } catch (Exception e){
-            logger.error("proxy failure",e);
-            error(cls,method,params,e);
+        } catch (Exception e) {
+            logger.error("proxy failure", e);
+            error(cls, method, params, e);
             throw e;
         } finally {
             end();
@@ -35,24 +33,27 @@ public abstract class AspectProxy implements Proxy {
         return result;
     }
 
-    public void begin(){
+    public void begin() {
 
     }
-    public boolean intercepter(Class<?> cls,Method method,Object[] params) throws Throwable{
+
+    public boolean intercepter(Class<?> cls, Method method, Object[] params) throws Throwable {
         return true;
     }
 
-    public void before(Class<?> cls,Method method,Object[] params) throws Throwable{
-
-    }
-    public void after(Class<?> cls,Method method,Object[] params,Object result) throws Throwable{
-
-    }
-    public void error(Class<?> cls, Method method, Object[] params,Throwable e){
+    public void before(Class<?> cls, Method method, Object[] params) throws Throwable {
 
     }
 
-    public void end(){
+    public void after(Class<?> cls, Method method, Object[] params, Object result) throws Throwable {
+
+    }
+
+    public void error(Class<?> cls, Method method, Object[] params, Throwable e) {
+
+    }
+
+    public void end() {
 
     }
 }
