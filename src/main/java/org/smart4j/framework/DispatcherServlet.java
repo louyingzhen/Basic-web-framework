@@ -8,12 +8,14 @@ import org.smart4j.framework.bean.View;
 import org.smart4j.framework.helper.BeanHelper;
 import org.smart4j.framework.helper.ConfigHelper;
 import org.smart4j.framework.helper.ControllerHelper;
+import org.smart4j.framework.helper.UploadHelper;
 import org.smart4j.framework.util.*;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -24,6 +26,7 @@ import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
 
+@WebServlet(urlPatterns = "/*",loadOnStartup = 0)
 public class DispatcherServlet extends HttpServlet {
 
     @Override
@@ -38,12 +41,17 @@ public class DispatcherServlet extends HttpServlet {
         //注册处理静态资源的默认Servlet
         ServletRegistration defaultServlet = servletContext.getServletRegistration("default");
         defaultServlet.addMapping(ConfigHelper.getAppAssetPath() + "*");
+        UploadHelper.init(servletContext);
     }
 
     public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //获取请求方法与请求路径
         String requestMethod = request.getMethod().toLowerCase();
         String requestPath = request.getPathInfo();
+
+        if(requestPath.equals("/favicon.ico")){
+            return;
+        }
         //获取Action处理器
         Handler handler = ControllerHelper.getHandler(requestMethod, requestPath);
         if (handler != null) {
