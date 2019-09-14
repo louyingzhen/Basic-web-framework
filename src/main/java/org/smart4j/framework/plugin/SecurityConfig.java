@@ -32,4 +32,7 @@ public final class SecurityConfig {
         return false;
     }
 
+    public static boolean isCache() {
+        return false;
+    }
 }

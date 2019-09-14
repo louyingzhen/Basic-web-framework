@@ -6,6 +6,7 @@ import org.smart4j.framework.annotation.Service;
 import org.smart4j.framework.annotation.Transaction;
 import org.smart4j.framework.bean.FileParam;
 import org.smart4j.framework.helper.DatabaseHelper;
+import org.smart4j.framework.helper.UploadHelper;
 import org.smart4j.framework.model.Customer;
 
 import java.util.List;

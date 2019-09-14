@@ -4,10 +4,11 @@ import org.apache.shiro.cache.CacheManager;
 import org.apache.shiro.cache.MemoryConstrainedCacheManager;
 import org.apache.shiro.mgt.CachingSecurityManager;
 import org.apache.shiro.mgt.RealmSecurityManager;
+import org.apache.shiro.realm.Realm;
 import org.apache.shiro.web.mgt.WebSecurityManager;
 import org.apache.shiro.web.servlet.ShiroFilter;
-import sun.security.krb5.Realm;
-import sun.security.util.SecurityConstants;
+import org.smart4j.framework.plugin.realm.SmartCustomRealm;
+import org.smart4j.framework.plugin.realm.SmartJdbcRealm;
 
 import java.util.LinkedHashSet;
 import java.util.Set;

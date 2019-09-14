@@ -50,7 +50,7 @@ public final class CastUtil {
     /**
      * 转为long型（提供默认值）
      */
-    public static long castLong(Object obj,ong defaultValue){
+    public static long castLong(Object obj,long defaultValue){
         long longValue = defaultValue;
         if(obj != null){
             String strValue = castString(obj);

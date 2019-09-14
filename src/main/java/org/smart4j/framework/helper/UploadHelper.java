@@ -4,13 +4,13 @@ import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
-import org.aspectj.util.FileUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.smart4j.framework.bean.FileParam;
 import org.smart4j.framework.bean.FormParam;
 import org.smart4j.framework.bean.Param;
 import org.smart4j.framework.util.CollectionUtil;
+import org.smart4j.framework.util.FileUtil;
 import org.smart4j.framework.util.StreamUtil;
 import org.smart4j.framework.util.StringUtil;
 
