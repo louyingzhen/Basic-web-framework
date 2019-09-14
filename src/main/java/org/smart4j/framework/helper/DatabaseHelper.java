@@ -10,12 +10,12 @@ import org.slf4j.LoggerFactory;
 import org.smart4j.framework.util.CollectionUtil;
 import org.smart4j.framework.util.PropsUtil;
 
+import javax.sql.DataSource;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.sql.SQLWarning;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -276,4 +276,7 @@ public final class DatabaseHelper {
         }
     }
 
+    public static DataSource getDataSource() {
+        return DATA_SOURCE;
+    }
 }

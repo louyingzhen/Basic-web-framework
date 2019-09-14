@@ -3,9 +3,7 @@ package org.smart4j.framework.util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.management.relation.Relation;
 import java.lang.reflect.Field;
-import java.lang.reflect.Member;
 import java.lang.reflect.Method;
 
 /**
@@ -22,6 +20,17 @@ public final class ReflectionUtil {
         Object instance;
         try{
             instance = cls.newInstance();
+        } catch(Exception e){
+            LOGGER.error("new instance failure",e);
+            throw new RuntimeException(e);
+        }
+        return instance;
+    }
+
+    public static Object newInstance(String className){
+        Object instance;
+        try{
+            instance = Class.forName(className);
         } catch(Exception e){
             LOGGER.error("new instance failure",e);
             throw new RuntimeException(e);
