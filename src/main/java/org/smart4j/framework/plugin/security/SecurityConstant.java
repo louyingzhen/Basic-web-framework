@@ -1,4 +1,4 @@
-package org.smart4j.framework.plugin;
+package org.smart4j.framework.plugin.security;
 
 /**
  * 常量接口

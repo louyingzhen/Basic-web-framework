@@ -6,7 +6,7 @@ import org.smart4j.framework.annotation.Action;
 import org.smart4j.framework.bean.Param;
 import org.smart4j.framework.bean.View;
 import org.smart4j.framework.exception.AuthcException;
-import org.smart4j.framework.plugin.SecurityHelper;
+import org.smart4j.framework.plugin.security.SecurityHelper;
 
 public class SystemController {
     public static final Logger LOGGER = LoggerFactory.getLogger(SystemController.class);

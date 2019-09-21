@@ -3,7 +3,7 @@ package org.smart4j.framework.plugin.realm;
 import org.apache.shiro.authc.credential.Md5CredentialsMatcher;
 import org.apache.shiro.realm.jdbc.JdbcRealm;
 import org.smart4j.framework.helper.DatabaseHelper;
-import org.smart4j.framework.plugin.SecurityConfig;
+import org.smart4j.framework.plugin.security.SecurityConfig;
 
 /**
  * 基于Smart的JDBC Realm(需要提供相关smart.plugin.security.jdbc.*配置项)

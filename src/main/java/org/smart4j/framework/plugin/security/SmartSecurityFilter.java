@@ -1,4 +1,4 @@
-package org.smart4j.framework.plugin;
+package org.smart4j.framework.plugin.security;
 
 import org.apache.shiro.cache.CacheManager;
 import org.apache.shiro.cache.MemoryConstrainedCacheManager;

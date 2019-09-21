@@ -7,9 +7,9 @@ import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.subject.SimplePrincipalCollection;
-import org.smart4j.framework.plugin.Md5CredentialsMatcher;
-import org.smart4j.framework.plugin.SecurityConstant;
-import org.smart4j.framework.plugin.SmartSecurity;
+import org.smart4j.framework.plugin.security.Md5CredentialsMatcher;
+import org.smart4j.framework.plugin.security.SecurityConstant;
+import org.smart4j.framework.plugin.security.SmartSecurity;
 
 import java.util.HashSet;
 import java.util.Set;
